@@ -4,6 +4,8 @@ body {
     background-color: #57f8e1;
 }
 
+/* header  */
+
 .myNavbar {
     position: fixed;
     justify-content: space-between;
@@ -47,6 +49,8 @@ body {
     transform: translateX(-50%);
 }
 
+/* about */
+
 .profile-picture {
     width: 200px;
     border-radius: 50%;
@@ -60,6 +64,8 @@ body {
     padding-bottom: 30px;
 }
 
+/* projects */
+
 .projects-section {
     margin-top: 50px;
 }
@@ -68,6 +74,13 @@ body {
     background-color: black;
     padding: 10px;
     text-align: center;
+}
+
+.img-click:hover, .nav-item:hover, .myLogo img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.3s;
 }
 
 .text-white, .text-white-50 {

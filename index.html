@@ -15,20 +15,20 @@
     <header>
     <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light myNavbar">
-            <a class="navbar-brand myLogo" href="#"><img src="./assets/logo.png" alt="logo"></a>
+            <a class="navbar-brand myLogo" href="#home"><img src="./assets/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Work</a>
+                    <a class="nav-link" href="#projects">Work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
             </div>
@@ -37,7 +37,7 @@
 
       <main>
         <!-- JUMBOTRON -->
-        <div class="jumbotron myJumbotron">
+        <div class="jumbotron myJumbotron" id="home">
             <h1 class="display-4">HELLO, WORLD!</h1>
         </div>
 
@@ -61,23 +61,23 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/projs.jpeg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/projs.jpeg" alt="collage of mini projects" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Very short poem</h4>
-                            <p class="text-black-50 mb-0">Try our blackberry gin, the best blackberry gin yet, The blackberry gin that no one will ever forget.</p>
+                            <h4>My Work</h4>
+                            <p class="text-black-50 mb-0">Below, you will find a selection of projects that showcase my skills and interests in software development. Whether it's my first attempt with hangman made in Flask or a little website for a fictitious product, I am constantly striving to learn and create meaningful work that makes an impact.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="./assets/countdown.jpeg" alt="..." /></div>
+                    <div class="col-lg-6 img-click"><a href="https://michalous.github.io/equinox-countdown/"><img class="img-fluid" src="./assets/countdown.jpeg" alt="screenshot of countdown clock" /></a></div>
                     <div class="col-lg-6">
                         <div class="text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Magna Carta Libertatum</h4>
-                                    <p class="mb-0 text-white-50">Local hearsay has been busy about the past of our blackberries. Many believe that in the spring of 1215 King John of England ate a considerable amount of them before he made up his mind to head towards Windsor to sign Magna Carta.</p>
+                                    <h4 class="text-white">Equinox countdown</h4>
+                                    <p class="mb-0 text-white-50">Nice little project to show a countdown until next equinox. The biggest challenge here for me was to figure out how to display digits in the grid.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -86,13 +86,13 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="./assets/covid-graph.jpeg" alt="..." /></div>
+                    <div class="col-lg-6 img-click"><a href="https://michalous.github.io/covid-graph/"><img class="img-fluid" src="./assets/covid-graph.jpeg" alt="bar chart of covid cases in UK" /></a></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Cheers!</h4>
-                                    <p class="mb-0 text-white-50">Today is <span id="day"></span> sometime in <span id="month"></span>. It is a great day to have one or maybe two glasses of our delicious drink. So don't be shy and have some!</p>
+                                    <h4 class="text-white">Covid cases graph</h4>
+                                    <p class="mb-0 text-white-50">This project pulls the data from the UK Government website and displays it as a bar chart using Plotly JS. To smooth out the spikes in the data I've calculated 7 day averages and displayed them alongside the actual data.</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -101,13 +101,13 @@
                 </div>
                 <!-- Project Three Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="./assets/mastermind.jpeg" alt="..." /></div>
+                    <div class="col-lg-6 img-click"><a href="https://michalous.github.io/mastermind/"><img class="img-fluid" src="./assets/mastermind.jpeg" alt="screenshot of mastermind game" /></a></div>
                     <div class="col-lg-6">
                         <div class="text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Magna Carta Libertatum</h4>
-                                    <p class="mb-0 text-white-50">Local hearsay has been busy about the past of our blackberries. Many believe that in the spring of 1215 King John of England ate a considerable amount of them before he made up his mind to head towards Windsor to sign Magna Carta.</p>
+                                    <h4 class="text-white">Mastermind</h4>
+                                    <p class="mb-0 text-white-50">I got an idea for this game while watching an introductory lesson to CS50AI where it is mentioned. It's something I used to play as a little kid. Maybe the next step for me would be to write an algorithm for computer to win any game - it should be possible in 5 or fewer turns.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -116,13 +116,13 @@
                 </div>
                 <!-- Project Four Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="./assets/portfolio1.jpeg" alt="..." /></div>
+                    <div class="col-lg-6 img-click"><a href="https://michalous.github.io/challenge-2/"><img class="img-fluid" src="./assets/portfolio1.jpeg" alt="screenshot of my previous portfolio" /></a></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Cheers!</h4>
-                                    <p class="mb-0 text-white-50">Today is <span id="day"></span> sometime in <span id="month"></span>. It is a great day to have one or maybe two glasses of our delicious drink. So don't be shy and have some!</p>
+                                    <h4 class="text-white">Porfolio website version 1.0</h4>
+                                    <p class="mb-0 text-white-50">My first attempt to build portfolio website. Since it's been built not that long ago it's very similar to this one. Here you will find links to my other little projects.</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -131,13 +131,13 @@
                 </div>
                 <!-- Project Five Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="./assets/random.png" alt="..." /></div>
+                    <div class="col-lg-6 img-click"><a href="https://michalous.github.io/math-random/"><img class="img-fluid" src="./assets/random.png" alt="sine graph" /></a></div>
                     <div class="col-lg-6">
                         <div class="text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Magna Carta Libertatum</h4>
-                                    <p class="mb-0 text-white-50">Local hearsay has been busy about the past of our blackberries. Many believe that in the spring of 1215 King John of England ate a considerable amount of them before he made up his mind to head towards Windsor to sign Magna Carta.</p>
+                                    <h4 class="text-white">Playing with Math.random()</h4>
+                                    <p class="mb-0 text-white-50">It's very satisfying to watch computer compute stuff. Here are four little projects built with Math.random(). They are Monte Carlo integration, probabilities of rolling 2 dice, the birthday problem and shuffling the deck of cards.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -148,7 +148,7 @@
         </section>
 
         <!-- contact -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contact Me!</h2>
         <form class="myForm">
             <div class="mb-3">
@@ -170,7 +170,7 @@
         </section>
       </main>
       <footer>
-        <img class="footer_logo" src="./assets/logo_lightlander_white.png" alt="">
+        <img class="footer_logo" src="./assets/logo_lightlander_white.png" alt="logo">
         <div class="rights">
           <p>Copyright &copy; Michal Skalsky 2023</p>
         </div>
