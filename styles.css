@@ -64,6 +64,16 @@ body {
     padding-bottom: 30px;
 }
 
+.skills {
+    text-align: left !important;
+    margin-top: 50px;
+}
+
+.skills ul li {
+    list-style-type: none;
+}
+
+
 /* projects */
 
 .projects-section {
